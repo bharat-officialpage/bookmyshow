@@ -1,0 +1,1781 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie,Tickets, plays , Sports , Events , & Cinemas near Delhi-NCR - ...</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/bookmyshow/images/logo.png" type="image/x-icon">
+  <!-- favicon -->
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="/bookmyshow/liveevent/live.css">
+    <!-- custom css link -->
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- swiper link  -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- font awesome cdn link  -->
+
+</head>
+
+<body>
+
+  
+    <!-- header 1  -->
+    <header>
+        <div class="header">
+            <div class="logo">
+            <a href="/bookmyshow/index.html">
+                <img src="/bookmyshow/images/bookmyshowimg.svg" alt="img" class="img-fluid">
+            </a>
+                <!-- <h6>book<span id="my">my</span>show</h6> -->
+            </div>
+            <div class="resplogo">
+                <h6>It All Starts Here!</h6>
+                <button class="btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal3">Delhi-NCR<span
+                        class="bi bi-chevron-right"></span></button>
+            </div>
+
+            <form action="#">
+                <i class="bi bi-search"></i>
+                <div class="inputbox">
+                    <input class="form-control" type="text"
+                        placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                        aria-label="default input example">
+                </div>
+            </form>
+
+            <div class="iconcontent">
+                <button class="btn-1" data-bs-toggle="modal" data-bs-target="#exampleModal1">Delhi-NCR <span
+                        class="bi bi-caret-down-fill"></span> <span class="bi bi-chevron-right"></span></button>
+                <button class="btn-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign in</button>
+                <i class="bi bi-list hamburger " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"></i>
+            </div>
+
+            <div class="respobtn">
+                <button>Use App</button>
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+    <!-- header 1  -->
+       
+        <!-- header 2  -->
+        <div class="header-2">
+            <div class="row justify-content-between">
+                <div class="col-12">
+                    <div class="box" id="left">
+                        <a href="#">Movies</a>
+                        <a href="#">Stream
+                            <div class="new text-danger">NEW</div>
+                        </a>
+                        <a href="#">Events</a>
+                        <a href="#">Plays</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Activities</a>
+                        <a href="#">Buzz</a>
+                    </div>
+                    <div class="box" id="right">
+                        <a href="/bookmyshow/Listshow/listshow.html">ListYourShow</a>
+                        <a href="/bookmyshow/Corporate/corporate.html">Corporates
+                            <div class="new text-danger">NEW</div>
+                        </a>
+                        <a href="/bookmyshow/liveevent/live.html">Offers</a>
+                        <a href="/bookmyshow/giftcart/gift.html">Gift Cards</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header 2  -->
+
+
+        <!-- header 3  -->
+        <div class="header-3">
+            <div class="row text-center justify-content-between">
+                <div class="col-3" id="colum1">
+                    <a href="/bookmyshow/index.html">
+                        <img src="/bookmyshow/images/logo.png" class="img-fluid" alt="image">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="col-3" id="colum2">
+                    <i class="bi bi-star-fill"></i>
+                    <span id="live">LIVE</span>
+                    <span id="event">Events</span>
+                </div>
+                <div class="col-3" id="colum3">
+                    <i class="bi bi-person-fill" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header 3  -->
+
+
+    <!-- inputsearch -->
+    <section class="inputsearch">
+        <!-- row 1 -->
+        <div class="row justify-content-between" id="one">
+            <div class="col-2" id="left">
+                <i class="bi bi-chevron-left"></i>
+            </div>
+            <div class="col-5" id="mid">
+                <div class="input">
+                    <input type="email" placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                        class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="col-2 text-end" id="right">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <!-- row 1 -->
+
+        <!-- row 2 -->
+        <div class="row justify-content-evenly " id="cinemas">
+            <div class="col-md-3 d-flex" id="left">
+                <button id="tab-1" class="btn-1 box  active">MOVIES</button>
+                <button id="tab-2" class="btn-2 box">CINEMAS</button>
+            </div>
+            <div class="col-md-6" id="tabs">
+                <span>Filter</span>
+                <span>Hindi</span>
+                <span>English</span>
+                <span>Punjabi</span>
+                <span>Telugu</span>
+                <span>Malayalam</span>
+                <span>Assamese</span>
+                <span>+ 4 more</span>
+            </div>
+        </div>
+        <!-- row 2 -->
+
+        <!-- row 3 -->
+        <div class="wrapper tabcontent  show" id="tab-1-content">
+            <div class="row justify-content-between cinemasAbout  ">
+                <!-- col - 1 -->
+                <div class="col">
+                    <h5 id="Hindi">HINDI</h5>
+                    <a href="#"><span>Ant-Man and the Wasp: Quantumania <i id="New">NEW</i></span></a>
+                    <div class="box">
+                        <a href="#"><span>3D</span></a>
+                        <a href="#"><span>4DX 3D</span></a>
+                        <a href="#"><span>2D</span></a>
+                        <a href="#"><span>ICE 3D</span></a>
+                    </div>
+                    <a href="#"><span>Avatar: The Way of Water (3D Hindi) (UA) <span id="heart"
+                                class="bi bi-suit-heart-fill"></span> <span id="percentage">87%</span></span></a>
+
+                    <a href="#">Daman (Hindi) (UA) <span id="heart" class="bi bi-suit-heart-fill"></span> <span
+                            id="percentage">94%</span></a>
+
+
+                </div>
+                <!-- col - 1 -->
+
+                <!-- col - 2 -->
+
+                <div class="col">
+                    <h5 id="Hindi">Dilwale Dulhania Le Jayenge (U)</h5>
+                    <a href="#"><span id="heart" class="bi bi-suit-heart-fill"></span> 91%</a>
+                    <a href="#">Drishyam 2 (UA) <span id="heart" class="bi bi-suit-heart-fill"></span>89%</a>
+                    <a href="#">Gandhi Godse Ek Yudh (U)<span id="heart" class="bi bi-suit-heart-fill"></span>70%</a>
+                    <a href="#">Jab We Met (U)<span id="heart" class="bi bi-suit-heart-fill"></span>94%</a>
+                    <a href="#">Palak (U)<span id="heart" class="bi bi-suit-heart-fill"></span>84%</a>
+                </div>
+
+                <!-- col - 2 -->
+
+                <!-- col - 3 -->
+
+                <div class="col">
+                    <h5 id="Hindi">Pathaan <span id="heart" class="bi bi-suit-heart-fill"></span>83%</h5>
+                    <div class="box">
+                        <a href="#"><span>3D</span></a>
+                        <a href="#"><span>4DX 3D</span></a>
+                        <a href="#"><span>2D</span></a>
+                        <a href="#"><span>ICE 3D</span></a>
+                    </div>
+
+                    <a href="#"><span>Puss In Boots: The Last Wish (3D Hindi) (U)<span id="heart"
+                                class="bi bi-suit-heart-fill"></span> <span id="percentage">91%</span></span></a>
+
+                    <a href="#">Shehzada (UA) <i id="New">NEW</i>
+                    </a>
+
+                    <a href="#">Shiv Shastri Balboa (UA)<i id="New">NEW</i> <span id="heart"
+                            class="bi bi-suit-heart-fill"></span>72%
+                    </a>
+                    <a href="#">Tamasha (UA)<span id="heart" class="bi bi-suit-heart-fill"></span>65%
+                    </a>
+                </div>
+
+                <!-- col - 3 -->
+
+                <!-- col - 4 -->
+
+                <div class="col">
+                    <h5 id="Hindi">Dilwale Dulhania Le Jayenge (U)</h5>
+                    <a href="#"><span id="heart" class="bi bi-suit-heart-fill"></span> 91%</a>
+                    <a href="#">Drishyam 2 (UA) <span id="heart" class="bi bi-suit-heart-fill"></span>89%</a>
+                    <a href="#">Gandhi Godse Ek Yudh (U)<span id="heart" class="bi bi-suit-heart-fill"></span>70%</a>
+                    <a href="#">Jab We Met (U)<span id="heart" class="bi bi-suit-heart-fill"></span>94%</a>
+                    <a href="#">Palak (U)<span id="heart" class="bi bi-suit-heart-fill"></span>84%</a>
+                </div>
+
+                <!-- col - 4 -->
+
+            </div>
+            <!-- row 3 -->
+        </div>
+
+        <!-- row 4 -->
+        <div class="row justify-content-between tabcontent secondrows" id="tab-2-content">
+            <!-- col - 1 -->
+            <div class="col-12">
+                <a href="#">• 7D Masti: Faridabad, Haryana</a>
+                <a href="#">• 7D Masti: Gurugram</a>
+                <a href="#">• 7D Mastiii: Greater Noida</a>
+                <a href="#">• Amba Cinema: Delhi</a>
+                <a href="#">• Batra Reels Cinemas: New Friends Colony</a>
+                <a href="#">• Carnival: TGIP</a>
+                <a href="#">• Cinepolis: Airia Mall, Sohna Road, Gurgaon</a>
+                <a href="#">• Cinepolis: Cross River Mall, Shahdara</a>
+                <a href="#">• Cinepolis: DLF Avenue, Saket</a>
+                <a href="#">• Cinepolis: Grand Venice Mall, Greater Noida</a>
+                <a href="#">• Cinepolis: Janak Cinema, New Delhi</a>
+                <a href="#">• Cinepolis: Modi Mall (Formerly Spice Mall)</a>
+                <a href="#">• Cinepolis: Pacific NSP2, Delhi</a>
+                <a href="#">• Cinepolis: The Esplanade, Gurugram</a>
+                <a href="#">• Cinepolis: Unity One Mall Rohini, Delhi</a>
+                <a href="#">• Cinepolis: V3S Mall, Laxmi Nagar</a>
+                <a href="#">• Delhi: PVR Director`s Cut, Ambience Mall</a>
+                <a href="#">• Fun Cinemas: PM Cinemas, Parsvnath Mall, Manhattan</a>
+                <a href="#">• Fun Cinemas: PM Cinemas, Parsvnath Mall, Manhattan</a>
+                <a href="#">• G3S Cinema: Rohini (Newly Renovated)</a>
+                <a href="#">• Gagan Theatre: Nand Nagri, Delhi</a>
+                <a href="#">• Carnival: TGIP</a>
+                <a href="#">• Cinepolis: Airia Mall, Sohna Road, Gurgaon</a>
+                <a href="#">• Cinepolis: Cross River Mall, Shahdara</a>
+                <a href="#">• Cinepolis: DLF Avenue, Saket</a>
+                <a href="#">• Cinepolis: Grand Venice Mall, Greater Noida</a>
+                <a href="#">• Cinepolis: Janak Cinema, New Delhi</a>
+                <a href="#">• Cinepolis: Modi Mall (Formerly Spice Mall)</a>
+                <a href="#">• Cinepolis: Pacific NSP2, Delhi</a>
+                <a href="#">• Cinepolis: Grand Venice Mall, Greater Noida</a>
+                <a href="#">• Cinepolis: Janak Cinema, New Delhi</a>
+                <a href="#">• Cinepolis: Modi Mall (Formerly Spice Mall)</a>
+                <a href="#">• Cinepolis: Pacific NSP2, Delhi</a>
+                <a href="#">• Cinepolis: The Esplanade, Gurugram</a>
+                <a href="#">• Cinepolis: Unity One Mall Rohini, Delhi</a>
+                <a href="#">• Cinepolis: V3S Mall, Laxmi Nagar</a>
+                <a href="#">• Delhi: PVR Director`s Cut, Ambience Mall</a>
+                <a href="#">• Fun Cinemas: PM Cinemas, Parsvnath Mall, Manhattan</a>
+                <a href="#">• Fun Cinemas: PM Cinemas, Parsvnath Mall, Manhattan</a>
+                <a href="#">• G3S Cinema: Rohini (Newly Renovated)</a>
+                <a href="#">• Gagan Theatre: Nand Nagri, Delhi</a>
+                <a href="#">• Carnival: TGIP</a>
+                <a href="#">• 7D Masti: Faridabad, Haryana</a>
+                <a href="#">• 7D Masti: Gurugram</a>
+                <a href="#">• 7D Mastiii: Greater Noida</a>
+                <a href="#">• Amba Cinema: Delhi</a>
+                <a href="#">• Batra Reels Cinemas: New Friends Colony</a>
+                <a href="#">• Carnival: TGIP</a>
+                <a href="#">• Cinepolis: Airia Mall, Sohna Road, Gurgaon</a>
+            </div>
+            <!-- col - 1 -->
+        </div>
+        <!-- row 4 -->
+    </section>
+
+    <!-- inputsearch -->
+
+
+
+
+
+
+    <!-- inputsearch 2 -->
+
+    <section class="inputsearch2">
+        <!-- row 1 -->
+        <div class="row justify-content-between" id="one">
+            <div class="col-2" id="left">
+                <i class="bi bi-chevron-left"></i>
+            </div>
+            <div class="col-5" id="mid">
+                <div class="input">
+                    <input type="email" placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                        class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="col-2 text-end" id="right">
+                <i class="bi bi-x-lg"></i>
+            </div>
+        </div>
+        <!-- row 1 -->
+
+        <!-- row 2 -->
+        <div class="row justify-content-evenly " id="cinemas">
+            <div class="col-md-12" id="tabs">
+                <span id="Filter">Filter</span>
+                <span>Hindi</span>
+                <span>English</span>
+                <span>Punjabi</span>
+                <span>Telugu</span>
+                <span>Malayalam</span>
+                <span>Assamese</span>
+                <span id="more">+ 4 more</span>
+            </div>
+        </div>
+        <!-- row 2 -->
+
+        <!-- row 3 -->
+        <div class="row justify-content-between" id="cinemasAbout">
+
+            <div class="row">
+                <div class="col-12">
+                    <h5>SUGGESTED SEARCH</h5>
+                    <a href="#" id="a"><span>Latest movies in theatres near you</span></a>
+                    <a href="#" id="a"><span>Watch premium movies online</span></a>
+                    <a href="#" id="a"><span>Popular events in your city</span></a>
+                    <h5>TRENDING SEARCHES</h5>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Dilwale Dulhania Le Jayenge</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Ved</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Pathaan</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Ant-Man and the Wasp: Quantumania</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Jab We Met</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Jab We Met</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Dilwale Dulhania Le Jayenge</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Ved</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Pathaan</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Ant-Man and the Wasp: Quantumania</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Jab We Met</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <a href="#"><span>Jab We Met</span></a>
+                        <i class="bi bi-film"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- row 3 -->
+
+
+    </section>
+
+    <!-- inputsearch 2 -->
+
+
+
+    <!-- canvas section  -->
+    <aside class="sideoffcanvas">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Hey!</h5>
+                <button type="button " class="btn-close btn btn-outline-light text-danger"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- top -->
+                <div class="top">
+                    <div class="row justify-content-between">
+                        <div class="col-2">
+                            <div class="box" id="left">
+                                <img src="/bookmyshow/images/rewards_login.png" class="img-fluid" alt="image">
+                            </div>
+                        </div>
+                        <div class="col-6" id="mid">
+                            <span>Unlock special offers & great benefits</span>
+                        </div>
+                        <div class="col-4" id="right">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                                class="btn btn-outline-danger">Login / Register</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- top -->
+
+                <!-- contents -->
+                <div class="contents">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- row 1 -->
+                            <div class="row d-flex justify-content-between" id="one">
+                                <div class="col-12">
+                                    <span class="bi bi-bell"> <i id="notfi">Notifications</i></span>
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                            <!-- row 1 -->
+
+                            <!-- row 2 -->
+                            <div class="row d-flex justify-content-between" id="two">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-1.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content ">
+                                        <h6>Your Orders</h6>
+                                        <h5>View all your bookings & purchases</h5>
+                                    </div>
+                                    <i class="bi bi-lock"></i>
+                                </div>
+                            </div>
+                            <!-- row 2 -->
+
+                            <!-- row 3 -->
+                            <div class="row d-flex justify-content-between" id="two">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-2.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h6>Stream Library</h6>
+                                        <h5>Rented & Purchased Movies</h5>
+                                    </div>
+                                    <i class="bi bi-lock"></i>
+                                </div>
+                            </div>
+                            <!-- row 3 -->
+
+                            <!-- row 4 -->
+                            <div class="row d-flex justify-content-between" id="one">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-3.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h6>Play Credit Card</h6>
+                                        <h5>View your Play Credit Card details and offers</h5>
+                                    </div>
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                            <!-- row 4 -->
+
+                            <!-- row 5 -->
+                            <div class="row d-flex justify-content-between" id="one">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-4.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h6>Help & Support</h6>
+                                        <h5>View commonly asked queries and Chat</h5>
+                                    </div>
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                            <!-- row 5 -->
+                            <!-- row 6 -->
+                            <div class="row d-flex justify-content-between" id="two">
+                                <div class="col-12 d-flex">
+                                    <div class="i">
+                                        <i class="bi bi-gear"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h6>Help & Support</h6>
+                                        <h5>View commonly asked queries and Chat</h5>
+                                    </div>
+                                    <i class="bi bi-lock text-end"></i>
+                                </div>
+                            </div>
+                            <!-- row 6 -->
+                            <!-- row 7 -->
+                            <div class="row d-flex justify-content-between" id="one">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-5.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h6>Rewards</h6>
+                                        <h5>View your rewards & unlock new ones</h5>
+                                    </div>
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                            <!-- row 7 -->
+                            <!-- row 8 -->
+                            <div class="row d-flex justify-content-between" id="one">
+                                <div class="col-12 d-flex">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/canvasimg-6.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h6>BookASmile</h6>
+                                    </div>
+                                    <span class="bi bi-chevron-right"></span>
+                                </div>
+                            </div>
+                            <!-- row 8 -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- contents -->
+            </div>
+        </div>
+    </aside>
+    <!-- canvas section  -->
+
+    <main>
+        <!-- section 1  -->
+        <div class="container-fluid">
+            <section class="Filter-Offer">
+                <!-- row 1 Start -->
+                <div class="row" id="row-1">
+                    <div class="col-12">
+                        <form action="#">
+                            <div class="inputbox">
+                                <input class="form-control" type="text" placeholder="Search for Offers by Name or Bank"
+                                    aria-label="default input example">
+
+                            </div>
+                            <i class="bi bi-search"></i>
+                        </form>
+                    </div>
+                </div>
+                <!-- row 1 End -->
+
+                <!-- row 2 Start -->
+                <div class="row text-center" id="row-2">
+                    <div class="col-12">
+                        <h3>Filter offers by</h3>
+                    </div>
+                </div>
+                <!-- row 2 End -->
+
+                <!-- row 3 Start -->
+                <div class="row" id="row-3">
+                    <div class="col-12 d-flex justify-content-center text-center">
+                        <div class="box">
+                            <i class="bi bi-credit-card-2-front"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="bi bi-credit-card-2-front"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-tag"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-tv"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-wallet"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-award"></i>
+                            <p>Credit Card</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>Credit Card</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- row 3 End -->
+            </section>
+            <!-- section 1  -->
+
+
+            <!-- section 2  -->
+            <section class="aboutoffer">
+                <!-- row 1  -->
+                <div class="row justify-content-evenly" id="row-1">
+                    <div class="col-2" id="colhover1">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-1.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-1.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover2">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-2.jpg" alt="image" class="img-fluid">
+                        </div>
+
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-2.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover3">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-3.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-3.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover4">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-4.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-4.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 1  -->
+
+                <!-- row 2  -->
+                <div class="row justify-content-evenly" id="row-1">
+                    <div class="col-2" id="colhover1">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-5.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-5.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover2">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-6.jpg" alt="image" class="img-fluid">
+                        </div>
+
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-6.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover3">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-7.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-7.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover4">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-8.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-8.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2  -->
+
+                <!-- row 3  -->
+                <div class="row justify-content-evenly" id="row-1">
+                    <div class="col-2" id="colhover1">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-9.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-9.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover2">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-10.jpg" alt="image" class="img-fluid">
+                        </div>
+
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-10.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover3">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-11.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-11.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover4">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-12.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-12.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 3  -->
+
+                <!-- row 4  -->
+                <div class="row justify-content-evenly" id="row-1">
+                    <div class="col-2" id="colhover1">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-13.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-13.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover2">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-14.jpg" alt="image" class="img-fluid">
+                        </div>
+
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-14.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover3">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-15.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-15.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="colhover4">
+                        <div class="image">
+                            <img src="/bookmyshow/images/bankimg-16.jpg" alt="image" class="img-fluid">
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="hovercontent">
+                            <h6>ABOUT OFFER</h6>
+                            <P>Get 2 free movie tickets or INR 500 off whichever is less with SBI Signature/Elite credit
+                                cards</P>
+                            <span id="available">Available For</span>
+                            <div class="d-flex justify-content-center">
+                                <i class="bi bi-laptop"></i>
+                                <span>WEB</span>
+                                <i class="bi bi-phone"></i>
+                                <span>MOBILE</span>
+                            </div>
+                        </div>
+                        <!-- hovercontent -->
+                        <div class="content">
+                            <div class="image">
+                                <img src="/bookmyshow/images/bankicon-16.jpg" alt="image" class="img-fluid">
+                            </div>
+                            <div class="div">
+                                <p>SBI Signature/Elite credit card offer</p>
+                                <p>Valid till<span>31 mar 2023 <br> 23:59</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 4  -->
+
+
+                        
+            </section>
+            <!-- section 2  -->
+
+            <!-- section 3  -->
+            <section class="discount">
+                <!-- row 1  -->
+                <div class="row mt-3 mb-3" id="row-1">
+                    <div class="col-12">
+                        <h6 class="text-center">A Plethora of Offers and Discounts at BookMyShow!</h6>
+                        <p>If you are searching for some <strong>discount offers</strong> on movie tickets, then
+                            BookMyShow is the place for <strong>offers on movie tickets,</strong>customized especially
+                            for you! you! Browse through our huge array of <strong>movie ticket offers</strong> and save
+                            big every time you book movies tickets with us. Discover these special</p>
+                    </div>
+                </div>
+                <!-- row 1  -->
+
+                <!-- row 2  -->
+                <div class="row" id="row-2">
+                    <div class="col-12">
+                        <div class="box">
+                            <h6>Card offers</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maiores aperiam sunt id
+                                atque animi ab quia nemo provident eligendi obcaecati alias vitae a! Corrupti est fugit
+                                qui
+                                adipisci cupiditate.</p>
+                        </div>
+                        <div class="box">
+                            <h6>Card offers</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maiores aperiam sunt id
+                                atque animi ab quia nemo provident eligendi obcaecati alias vitae a! Corrupti est fugit
+                                qui
+                                adipisci cupiditate.</p>
+                        </div>
+                        <div class="box">
+                            <h6>Card offers</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maiores aperiam sunt id
+                                atque animi ab quia nemo provident eligendi obcaecati alias vitae a! Corrupti est fugit
+                                qui
+                                adipisci cupiditate.</p>
+                        </div>
+                        <div class="box">
+                            <h6>Card offers</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maiores aperiam sunt id
+                                atque animi ab quia nemo provident eligendi obcaecati alias vitae a! Corrupti est fugit
+                                qui
+                                adipisci cupiditate.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2  -->
+
+                <!-- row 3  -->
+
+                <div class="row" id="row-3">
+                    <div class="col-12">
+                        <div class="top mt-3 mb-3">
+                            <div><strong>BookMyShow offers</strong>
+                                are designed to delight you! Check them out now, there's bound to be one that suits you.
+                                Do remember to read Terms and Conditions before applying offer code, though!</div>
+                        </div>
+                        <div class="mid">
+                            <p><span>Online Tickets</span><span class="bi bi-chevron-right">Card offers</span></p>
+                        </div>
+                        <div class="bottom">
+                            <h6>Privacy Note</h6>
+                            <p>By using www.bookmyshow.com(our website), you are fully accepting the Privacy Policy
+                                available at </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 3  -->
+            </section>
+            <!-- section 3  -->
+        </div>
+        <!-- container-fluid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- section 8 -->
+        <!-- MODEL SECTION START  -->
+        <!-- Modal -->
+        <div class="modal fade modelcites" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" id="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <form action="#">
+                            <i class="bi bi-search"></i>
+                            <div class="inputbox">
+                                <input class="form-control" type="text"
+                                    placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                                    aria-label="default input example">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <div class="content">
+                            <h1 class="text-center">Popular Cities</h1>
+                            <div class="row text-center">
+                                <!-- col - 1  -->
+                                <div class="col" id="column-1">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-1.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Mumbai</h5>
+                                    <div class="hovercontent-1">
+                                        <span>Mumbai:Western</span>
+                                        <span>Mumbai:Mumbai: South & Central</span>
+                                        <span>Navi Mumbai</span>
+                                        <span>Thane</span>
+                                        <span>Kalyan</span>
+                                        <span>Ulhasnagar</span>
+                                    </div>
+                                </div>
+                                <!-- col - 1  -->
+
+                                <!-- col - 2  -->
+                                <div class="col" id="column-2">
+                                    <img src="/bookmyshow/images/cityimg-2.png" class="img-fluid" alt="image">
+
+                                    <h5 id="mumbai">Delhi-NCR</h5>
+                                    <div class="hovercontent-2">
+                                        <span>Delhi</span>
+                                        <span>Gurugram (Gurgaon)</span>
+                                        <span>Noida</span>
+                                        <span>Ghaziabad</span>
+                                        <span>Kundli</span>
+                                        <span>Greater Noida</span>
+                                        <span>Faridabad </span>
+                                        <span>Pilkhuwa </span>
+                                    </div>
+                                </div>
+                                <!-- col - 2  -->
+                                <!-- col - 3  -->
+                                <div class="col" id="column-3">
+                                    <img src="/bookmyshow/images/cityimg-3.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Bengaluru</h5>
+                                </div>
+                                <!-- col - 3  -->
+                                <!-- col - 4  -->
+                                <div class="col" id="column-4">
+                                    <img src="/bookmyshow/images/cityimg-4.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Hyderabad</h5>
+                                </div>
+                                <!-- col - 4  -->
+                                <!-- col - 5  -->
+                                <div class="col" id="column-5">
+                                    <img src="/bookmyshow/images/cityimg-5.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Ahmedabad</h5>
+                                </div>
+                                <!-- col - 5  -->
+                                <!-- col - 6  -->
+                                <div class="col" id="column-6">
+                                    <img src="/bookmyshow/images/cityimg-6.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Chandigarh</h5>
+                                    <div class="hovercontent-6">
+                                        <span>Zirakpur</span>
+                                        <span>Mohali</span>
+                                    </div>
+                                </div>
+                                <!-- col - 6  -->
+                                <!-- col - 7  -->
+                                <div class="col" id="column-7">
+                                    <img src="/bookmyshow/images/cityimg-7.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Chennai</h5>
+                                </div>
+                                <!-- col - 7  -->
+                                <!-- col - 8  -->
+                                <div class="col" id="column-8">
+                                    <img src="/bookmyshow/images/cityimg-8.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Pune</h5>
+                                </div>
+                                <!-- col - 8  -->
+                                <!-- col - 9  -->
+                                <div class="col" id="column-9">
+                                    <img src="/bookmyshow/images/cityimg-9.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Kolkata</h5>
+                                </div>
+                                <!-- col - 9  -->
+                                <!-- col - 10  -->
+                                <div class="col" id="column-10">
+                                    <img src="/bookmyshow/images/cityimg-10.png" class="img-fluid" alt="image">
+                                    <h5 id="mumbai">Kochi</h5>
+                                </div>
+                                <!-- col - 10  -->
+                            </div>
+                        </div>
+
+                        <!-- row 2  -->
+                        <div class="Cities1">
+                            <h1 class="text-center">Other Cities</h1>
+                            <div class="row justify-content-between">
+                                <div class="col">
+                                    <a href="#">Aalo</a>
+                                    <a href="#">Abohar</a>
+                                    <a href="#">Abu Road</a>
+                                    <a href="#">Achampet</a>
+                                    <a href="#">Acharapakkam</a>
+                                    <a href="#">Addanki</a>
+                                    <a href="#">Adilabad</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Adimali</a>
+                                    <a href="#">Adipur</a>
+                                    <a href="#">Adoni</a>
+                                    <a href="#">Agar Malwa</a>
+                                    <a href="#">Agartala</a>
+                                    <a href="#">Agiripalli</a>
+                                    <a href="#">Agra</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Akividu</a>
+                                    <a href="#">Akluj</a>
+                                    <a href="#">Akola</a>
+                                    <a href="#">Aizawl</a>
+                                    <a href="#">Ajmer</a>
+                                    <a href="#">Akaltara</a>
+                                    <a href="#">Akbarpur</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Adimali</a>
+                                    <a href="#">Adipur</a>
+                                    <a href="#">Adoni</a>
+                                    <a href="#">Agar Malwa</a>
+                                    <a href="#">Agartala</a>
+                                    <a href="#">Agiripalli</a>
+                                    <a href="#">Agra</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Akividu</a>
+                                    <a href="#">Akluj</a>
+                                    <a href="#">Akola</a>
+                                    <a href="#">Aizawl</a>
+                                    <a href="#">Ajmer</a>
+                                    <a href="#">Akaltara</a>
+                                    <a href="#">Akbarpur</a>
+                                </div>
+                            </div>
+                            <!-- row 1 end -->
+                        </div>
+                        <!-- row 2  -->
+
+                        <div class="hidecites1">
+                            <div class="row text-center" id="hidecite">
+                                <div class="col-12" id="allcite">
+                                    <h6>View All Cities</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 8 -->
+
+        <!-- section 8 - 2 -->
+
+
+        <!-- Modal -->
+        <div class="modal fade modelcites2" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" id="modal-dialog3">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="wrapper">
+                            <div class="closei d-flex">
+                                <button type="button " class="btn-close btn btn-outline-light text-danger"  data-bs-dismiss="modal"  
+                                    aria-label="Close"></button>
+                                <span class="text-center Amgaon">Amgaon</span>
+                            </div>
+                            <div class="form">
+                                <form action="#">
+                                    <i class="bi bi-search"></i>
+                                    <div class="inputbox">
+                                        <input class="form-control" type="text"
+                                            placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                                            aria-label="default input example">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body" id="modal-body3">
+                        <div class="content">
+                            <h1>Popular Cities</h1>
+                            <div class="row text-center">
+                                <!-- col - 1  -->
+                                <div class="col" id="column-1">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-1.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Delhi-NCR</h5>
+                                </div>
+                                <!-- col - 1  -->
+
+                                <!-- col - 2  -->
+                                <div class="col" id="column-2">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-2.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Delhi-NCR</h5>
+                                </div>
+                                <!-- col - 2  -->
+                                <!-- col - 3  -->
+                                <div class="col" id="column-3">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-3.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Bengaluru</h5>
+                                </div>
+                                <!-- col - 3  -->
+                                <!-- col - 4  -->
+                                <div class="col" id="column-4">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-4.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Hyderabad</h5>
+                                </div>
+                                <!-- col - 4  -->
+                                <!-- col - 5  -->
+                                <div class="col" id="column-5">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-5.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Ahmedabad</h5>
+                                </div>
+                                <!-- col - 5  -->
+                                <!-- col - 6  -->
+                                <div class="col" id="column-6">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-6.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Chandigarh</h5>
+                                </div>
+                                <!-- col - 6  -->
+                                <!-- col - 7  -->
+                                <div class="col" id="column-7">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-7.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Chennai</h5>
+                                </div>
+                                <!-- col - 7  -->
+                                <!-- col - 8  -->
+                                <div class="col" id="column-8">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-8.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Pune</h5>
+                                </div>
+                                <!-- col - 8  -->
+                                <!-- col - 9  -->
+                                <div class="col" id="column-9">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-9.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Kolkata</h5>
+                                </div>
+                                <!-- col - 9  -->
+                                <!-- col - 10  -->
+                                <div class="col" id="column-10">
+                                    <div class="image">
+                                        <img src="/bookmyshow/images/cityimg-10.png" class="img-fluid" alt="image">
+                                    </div>
+                                    <h5 id="mumbai">Kochi</h5>
+                                </div>
+                                <!-- col - 10  -->
+                            </div>
+                        </div>
+
+                        <!-- row 2  -->
+                        <div class="Cities">
+                            <h1>Other Cities</h1>
+                            <div class="row justify-content-between">
+                                <div class="col">
+                                    <a href="#">Aalo</a>
+                                    <a href="#">Abohar</a>
+                                    <a href="#">Abu Road</a>
+                                    <a href="#">Achampet</a>
+                                    <a href="#">Acharapakkam</a>
+                                    <a href="#">Addanki</a>
+                                    <a href="#">Adilabad</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Adimali</a>
+                                    <a href="#">Adipur</a>
+                                    <a href="#">Adoni</a>
+                                    <a href="#">Agar Malwa</a>
+                                    <a href="#">Agartala</a>
+                                    <a href="#">Agiripalli</a>
+                                    <a href="#">Agra</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Akividu</a>
+                                    <a href="#">Akluj</a>
+                                    <a href="#">Akola</a>
+                                    <a href="#">Aizawl</a>
+                                    <a href="#">Ajmer</a>
+                                    <a href="#">Akaltara</a>
+                                    <a href="#">Akbarpur</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Adimali</a>
+                                    <a href="#">Adipur</a>
+                                    <a href="#">Adoni</a>
+                                    <a href="#">Agar Malwa</a>
+                                    <a href="#">Agartala</a>
+                                    <a href="#">Agiripalli</a>
+                                    <a href="#">Agra</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Akividu</a>
+                                    <a href="#">Akluj</a>
+                                    <a href="#">Akola</a>
+                                    <a href="#">Aizawl</a>
+                                    <a href="#">Ajmer</a>
+                                    <a href="#">Akaltara</a>
+                                    <a href="#">Akbarpur</a>
+                                </div>
+                            </div>
+                            <!-- row 1 end -->
+                        </div>
+                        <!-- row 2  -->
+
+                        <div class="hidecites">
+                            <div class="row text-center" id="hidecite">
+                                <div class="col-12" id="allcite">
+                                    <h6>View All Cities</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 8 - 2 -->
+        <!-- MODEL SECTION END  -->
+
+
+        <!-- section 9  -->
+        <!-- model sign in  -->
+        <section class="sign-In">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" id="dialog">
+                    <div class="modal-content" id="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 justify-content-center" id="exampleModalLabel">Get Started</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="button-fields">
+                                <div class="row text-center">
+                                    <div class="col-12" id="left">
+                                        <i class="bi bi-google"></i>
+                                        <button class="btn1">Continue with Google</button>
+                                    </div>
+                                    <div class="col-12" id="mid">
+                                        <i class="bi bi-envelope"></i>
+                                        <button class="btn2">Continue with Email</button>
+                                    </div>
+                                    <div class="col-12" id="right">
+                                        <i class="bi bi-apple"></i>
+                                        <button class="btn3">Continue with Apple</button>
+                                    </div>
+                                    <div class="col-12 mb-3 mt-3" id="bottom">
+                                        <span class="text-center">OR</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+                            <div class="form">
+                                <div class="row ">
+                                    <div class="col">
+                                        <form action="#" class="d-flex">
+                                            <img src="/bookmyshow/images/india-flag.jpg" class="img-fluid" alt="image">
+                                            <span>+ 91</span>
+                                            <div class="input">
+                                                <input type="tel" placeholder="Continue with mobile number"
+                                                    class="form-control" id="inputnumber">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- model sign in  -->
+        <!-- section 9  -->
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer">
+            <div class="row justify-content-between ">
+                <div class="col-sm-3" id="left">
+                    <img src="/bookmyshow/images/rewards_login.png" class="img-fluid" alt="image">
+                    <span>List your Show</span>
+                </div>
+                <div class="col-sm-5" id="mid">
+                    <h6>Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+                    </h6>
+                </div>
+                <div class="col-sm-2 " id="right">
+                    <button class="btn">Contact today!</button>
+                </div>
+            </div>
+            <div class="row justify-content-between text-center" id="second">
+                <div class="col-sm-3">
+                    <i class="bi bi-person-fill"></i>
+                    <p>24/7 CUSTOMER CARE</p>
+                </div>
+                <div class="col-sm-3">
+                    <i class="bi bi-person-fill"></i>
+                    <p>RESEND BOOKING CONFIRMATION</p>
+                </div>
+                <div class="col-sm-3">
+                    <i class="bi bi-person-fill"></i>
+                    <p>SUBSCRIBE TO THE NEWSLETTER</p>
+                </div>
+            </div>
+
+            <div class="row" id="three">
+                <div class="col">
+                    <p>Movies Now Showing in Delhi-NCR</p>
+                    <a href="#"><span>Pathaan |</span></a>
+                    <a href="#"><span>Shehzada |</span></a>
+                    <a href="#"><span>Ant-Man and the Wasp: Quantumania |</span></a>
+                    <a href="#"><span>The House of Dead Horror |</span></a>
+                    <a href="#"><span>Titanic |</span></a>
+                    <a href="#"><span>Kali Jotta |</span></a>
+                    <a href="#"><span>Wild Roller Coaster |</span></a>
+                    <a href="#"><span>Prehistoric Adventure |</span></a>
+                    <a href="#"><span>Shiv Shastri Balboa |</span></a>
+                    <a href="#"><span>Dilwale Dulhania Le Jayenge |</span></a>
+                    <p>Movies Now Showing in Delhi-NCR</p>
+                    <a href="#"><span>Pathaan |</span></a>
+                    <a href="#"><span>Shehzada |</span></a>
+                    <a href="#"><span>Ant-Man and the Wasp: Quantumania |</span></a>
+                    <a href="#"><span>The House of Dead Horror |</span></a>
+                    <a href="#"><span>Titanic |</span></a>
+                    <a href="#"><span>Kali Jotta |</span></a>
+                    <a href="#"><span>Wild Roller Coaster |</span></a>
+                    <a href="#"><span>Prehistoric Adventure |</span></a>
+                    <a href="#"><span>Shiv Shastri Balboa |</span></a>
+                    <a href="#"><span>Dilwale Dulhania Le Jayenge |</span></a>
+                    <p>Movies Now Showing in Delhi-NCR</p>
+                    <a href="#"><span>Pathaan |</span></a>
+                    <a href="#"><span>Shehzada |</span></a>
+                    <a href="#"><span>Ant-Man and the Wasp: Quantumania |</span></a>
+                    <a href="#"><span>The House of Dead Horror |</span></a>
+                    <a href="#"><span>Titanic |</span></a>
+                    <a href="#"><span>Kali Jotta |</span></a>
+                    <a href="#"><span>Wild Roller Coaster |</span></a>
+                    <a href="#"><span>Prehistoric Adventure |</span></a>
+                    <a href="#"><span>Shiv Shastri Balboa |</span></a>
+                    <a href="#"><span>Dilwale Dulhania Le Jayenge |</span></a>
+                    <p>Movies Now Showing in Delhi-NCR</p>
+                    <a href="#"><span>Pathaan |</span></a>
+                    <a href="#"><span>Shehzada |</span></a>
+                    <a href="#"><span>Ant-Man and the Wasp: Quantumania |</span></a>
+                    <a href="#"><span>The House of Dead Horror |</span></a>
+                    <a href="#"><span>Titanic |</span></a>
+                    <a href="#"><span>Kali Jotta |</span></a>
+                    <a href="#"><span>Wild Roller Coaster |</span></a>
+                    <a href="#"><span>Prehistoric Adventure |</span></a>
+                    <a href="#"><span>Shiv Shastri Balboa |</span></a>
+                    <a href="#"><span>Dilwale Dulhania Le Jayenge |</span></a>
+                </div>
+            </div>
+
+            <div class="row" id="four">
+                <div class="horizental">
+                    <div></div>
+                </div>
+                <div class="col text-center">
+                    <img src="/bookmyshow/images/logoimage.svg" class="img-fluid" alt="image">
+                </div>
+                <div class="horizental">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="five">
+                <div class="col">
+                    <a href="#" class="fab fa-facebook-f" id="i-1"></a>
+                    <a href="#" class="fab fa-twitter" id="i-2"></a>
+                    <a href="#" class="fab fa-instagram" id="i-3"></a>
+                    <a href="#" class="fab fa-linkedin" id="i-4"></a>
+                    <a href="#" class="fab fa-pinterest" id="i-5"></a>
+                </div>
+            </div>
+
+            <div class="row text-center" id="six">
+                <div class="col">
+                    <h6>Copyright 2023 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</h6> <br>
+                    <p>The content and images used on this site are copyright protected and copyrights vests with the
+                        respective owners. The usage of the content and images on this website is intended to promote
+                        the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and
+                        punishable by law.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper link  -->
+
+    <!-- script link -->
+    <script src="/bookmyshow/liveevent/live.js"></script>
+    <!-- script link -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+</body>
+
+</html>
